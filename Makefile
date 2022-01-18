@@ -23,7 +23,7 @@ test.e2e.single:
 
 .PHONY: run
 run:
-	envoy -c ./examples/${name}/envoy.yaml --concurrency 2 --log-format '%v'
+	envoy -c ./examples/${name}/envoy.yaml --concurrency 2 --log-format '%v' -l debug
 
 .PHONY: lint
 lint:
